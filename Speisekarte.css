@@ -1,25 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script", cursive, sans-serif;
+}
+
+body {
+  background-color: rgba(247, 247, 119, 0.55);
 }
 
 .header-1 {
-  color: #3030fd;
+  font-family: "Agbalumo", sans-serif;
+  color: #eb5819;
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   gap: 10px;
-  background-color: bisque;
+  background-color: rgba(194, 67, 29, 0.356);
   width: 100%;
   height: 100px;
   font-size: 2rem;
+}
+.img-section-fish {
+  background-color: rgba(0, 255, 255, 0.274);
+}
+
+.img-section-salad {
+  background-color: rgba(55, 216, 55, 0.274);
+}
+
+.img-section-drink {
+  background-color: rgba(0, 0, 255, 0.274);
 }
 .h2 {
   text-align: center;
   align-items: center;
   font-size: 1.9rem;
   margin-top: 1.2rem;
+  padding-top: 2rem;
 }
 
 .header {
@@ -29,37 +49,42 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px 0;
   font-size: 1.35rem;
+  text-align: left;
+}
+
+.price {
+  display: flex;
   text-align: center;
+  justify-content: right;
 }
 
 .img {
-  width: 100%;
+  width: 300px;
   align-items: baseline;
 }
 .img-img {
   width: 100%;
-  max-width: 350px;
-  height: 300px;
+  max-width: 250px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
   gap: 16px;
-  max-width: 1400px;
   margin: 0 auto;
   padding: 20px 0;
 }
-.img-img:hover {
-  transform: scale(1.3);
+.img:hover {
+  transform: scale(1.4);
 }
-.img-img::after {
+.img::after {
   content: "";
   box-shadow: 0 0 0 rgba(0, 255, 0);
   border-radius: 5px;
@@ -69,27 +94,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all 0.3s ease-in-out;
+  transition: none 0.3s ease-in-out;
 }
-.img-img:hover::after {
-  box-shadow: 0 10px 20px rgba(0, 255, 0, 0.801), 0 6px 6px rgb(0, 255, 0);
+.img:hover::after {
+  box-shadow: 0 8px 50px rgba(0, 204, 255, 0.801), 0 6px 6px rgb(0, 255, 0, 0.8);
 }
-/*.img-section {
+.img-section {
   margin: 1.5rem;
-  background-color: rgba(247, 247, 119, 0.55);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("./images/Speisekarte-Hintergrund.jpg");
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}*/
+  margin: 0 auto;
+}
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 70px;
   max-width: 1400px;
   margin: 2rem auto;
   padding: 20px 10px;
